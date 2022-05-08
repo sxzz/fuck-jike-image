@@ -1,0 +1,46 @@
+{
+  "name": "fuck-jike-image",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.0.0",
+  "description": "My awesome typescript library",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json,.md",
+    "lint:fix": "pnpm run lint -- --fix"
+  },
+  "dependencies": {
+    "jike-sdk": "^0.17.1",
+    "md5": "^2.3.0",
+    "qrcode": "^1.5.0",
+    "steggy": "^2.0.1",
+    "undici": "^5.1.1"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config-prettier": "^2.1.1",
+    "@sxzz/eslint-config-ts": "^2.1.1",
+    "@types/md5": "^2.3.2",
+    "@types/node": "*",
+    "eslint": "^8.15.0",
+    "eslint-define-config": "^1.4.0",
+    "esno": "^0.14.1",
+    "fast-glob": "^3.2.11",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "engines": {
+    "node": ">=14.19.0"
+  }
+}
